@@ -1,12 +1,17 @@
-import Navbar, { StyleNavbar } from "./components/Navbar";
-import { StyledButton } from "./components/Button.style";
+import { Button } from "./components/Button";
+import Navbar from "./components/Navbar";
 import { GlobalStyles } from "./components/Global.style";
+import PostCard from "./components/PostCard";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <GlobalStyles />
-      <StyleNavbar />
+      <Navbar />
+      <PostCard />
+      <PostCard />
+      <PostCard />
+      <PostCard />
     </div>
   );
 }
