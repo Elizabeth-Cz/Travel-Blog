@@ -9,8 +9,9 @@ export const StyledButton = styled.button`
   border-radius: 5px;
   font-weight: 600;
   font-size: 1rem;
+  cursor: pointer;
 `;
 
-export const Button = ({ children }) => {
+export const Button = ({ route, children, ...props }) => {
   return <StyledButton>{children}</StyledButton>;
 };
